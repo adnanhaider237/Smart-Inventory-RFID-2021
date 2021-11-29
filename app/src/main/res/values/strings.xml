@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Smart Inventory RFID 20</string>
+    <string name="cancel_session_message">Are you sure you want to cancel this Session? \nNOTE: This Session CANNOT be reopened any time in future!</string>
+    <string name="close_session_message">Are you sure you want to close this Session? \nNOTE: This Session CANNOT be reopened any time in future!</string>
+</resources>

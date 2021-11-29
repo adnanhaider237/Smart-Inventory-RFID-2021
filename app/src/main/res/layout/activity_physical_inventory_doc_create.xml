@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhysicalInventoryDocCreateActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/calibri_bold"
+        android:gravity="center"
+        android:text="Create Physical Inventory Document"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginBottom="5sp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2sp"
+        android:background="@drawable/shadow_background"
+        android:orientation="vertical"
+        android:padding="8sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_date_g"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5sp"
+                android:background="@drawable/edit_text"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:fontFamily="@font/calibri_bold"
+                android:hint="DateG"
+                android:padding="5sp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_site_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text"
+                    android:fontFamily="@font/calibri_bold"
+                    android:hint="Site Code"
+                    android:inputType="number"
+                    android:padding="5sp" />
+
+
+                <ImageView
+                    android:id="@+id/img_Search"
+                    android:layout_width="100sp"
+                    android:layout_height="45sp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:fontFamily="@font/calibri_bold"
+                    android:src="@drawable/ic_baseline_search_24"
+                    android:text="Save"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="@drawable/edit_text"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:gravity="center_vertical"
+                    android:text="Doc Num: "
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_docNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:fontFamily="@font/calibri_bold"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/on_click_btn_change_color"
+            android:fontFamily="@font/calibri_bold"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

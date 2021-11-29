@@ -1,0 +1,131 @@
+----------------------------------------------------------------------------------------------------
+27 January 2021:
+Tables list:
+-GetLocations
+-GetDetail(Salesman code,Branches)
+
+Session Maintain
+----------------------------------------------------------------------------------------------------
+URL:
+http://192.236.178.77:8091/
+----------------------------------------------------------------------------------------------------
+DeviceConfig: (only 1 record)
+DocNum, DeviceCode, SessionNum, DeviceID, DeviceNameE, DeviceNameA
+
+View Inventory Data=>Show locally data (Summary[])
+Session No.
+Site-Location
+Time: From To
+No. of tags
+Status
+
+Upload Data
+- Upload to Webservice. if upload is successful, Delete Local data.
+
+
+Inventory Screen:
+Session #:
+Scan Date:
+Site:
+Location:
+Total Number of Scanned Tag(s): 35
+
+Start | Stop Button
+
+Close inventory: Session close Enable site,location
+Cancel Inventory: Remove tags of that session (PhyHdr change status as cancel, remove from PhyItm)
+------------------------------------------
+524131303030303030303536
+
+Salesman code=>remove
+
+List Code=>big font=>
+Remove the list and show all tags on button click ()next activity
+
+------------------
+26 Feb
+- DeviceRegistration If not exists (Insert into DeviceMaster)
+select LastSessioNum from devicemaster and ensure current LastSessionNum is not less than response from Server.
+- Download UserProfiles
+
+upload:
+
+@Depracated...
+/UpdateDeviceSessionNum
+{
+	DeviceId,
+	LastSessionNum,
+
+Triggers this in the
+webservice
+- Update DeviceMaster Set NextSessionNum = '' where SessionNum < ''
+}
+
+/UpdatePhyInv
+Upload Session(Session#1
+--delete from PhyInvHdr where SessionNum ='' and DeviceId = ''
+--delete from PhyInvhdrItems where SessionNum ='' and DeviceId = ''
+Insert into PhyInvHdr
+(PhyInvHdr
+PhyInvItems) return rowcount
+if RowCount = PhyInvRowCount() delete from Android DB.
+Update DeviceMaster Set LastSessionNum = '7' where SessionNum < '7' and device = ''
+
+Upload Session(Session#2
+PhyInvHdr
+PhyInvItem) return rowcount
+if RowCount = PhyInvRowCount() delete from Android DB.
+
+Upload Session(Session#3
+PhyInvHdr
+PhyInvItem) return rowcount
+if RowCount = PhyInvRowCount() delete from Android DB.
+
+UploadAllSessions
+
+SessionH1
+SessionH2
+SessionH3
+SessionI1
+SessionI2
+SessionI3
+
+SessionH1-Count-20
+SessionH1-Count-10
+SessionH1-Count-5
+----
+Unique Key
+device ID + SessionNum
+DeviD + 1
+DeviD + 2
+,3 -
+,4 -
+DeviD + 5
+DeviD + 6
+
+5
+-------------------------
+- Volley Call to URL with JSON Data
+
+    For i = 0; I< = dtheader.rows.cout-1; i++
+    {
+        Calls and wait for response.
+        IF Response.Rows == dtItem.rows then
+        delete dtheader where sessionnum = ''
+        delete dtitem where sessionnum = '';
+    }
+-------------------------
+First:
+-Login
+-if local have no DeviceData {Upload Device info to Cloud}
+-if local have DeviceData {Nothing}
+
+Sync:
+-if Local have no DeviceData
+  {
+    -if Cloud have DeviceData {Insert to local}
+  }
+
+Check Server
+------------------------------------------------------------------------------------
+12 March 2021
