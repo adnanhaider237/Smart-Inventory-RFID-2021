@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.muazam.tech.smartinventoryrfid20">
+    package="com.muazam.tech.smartinventory20">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -19,40 +19,40 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="q">
         <activity
-            android:name=".PhysicalInventoryDocCreateActivity"
+            android:name="com.muazam.tech.smartinventory20.PhysicalInventoryDocCreateActivity"
             android:exported="true" />
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.muazam.tech.smartinventory20.SettingsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TagsListActivity"
+            android:name="com.muazam.tech.smartinventory20.TagsListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".InvoiceEntryActivity"
+            android:name="com.muazam.tech.smartinventory20.InvoiceEntryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".InventoryDataActivity"
+            android:name="com.muazam.tech.smartinventory20.InventoryDataActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SingleTagActivity"
+            android:name="com.muazam.tech.smartinventory20.SingleTagActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LandingActivity"
+            android:name="com.muazam.tech.smartinventory20.LandingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.muazam.tech.smartinventory20.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".QrModuleActivity"
+            android:name="com.muazam.tech.smartinventory20.QrModuleActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ConfigureActivity"
+            android:name="com.muazam.tech.smartinventory20.ConfigureActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.muazam.tech.smartinventory20.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.muazam.tech.smartinventory20.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
